@@ -88,7 +88,7 @@ body {
 .decoration.rule {
   position: absolute;
   width: 60%;
-  z-index: 1;
+  z-index: 5;
   transform: rotate(-25deg);
   top: -5%;
   filter: drop-shadow(3px 3px 5px #755050);
@@ -152,7 +152,7 @@ body {
   height: 75%;
   top: 0;
   border-radius: 15px;
-  background: url("./particleBg.png");
+  background: url("../images/particleBg.png");
   background-size: cover;
   background-position: center;
   filter: brightness(1.3);
