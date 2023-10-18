@@ -10,14 +10,14 @@
 
 <body>
   <div class="canvas_container">
-    <img src="/bg.png" class="bg_image" />
+    <img src="./bg.png" class="bg_image" />
     <canvas id="canvas1"></canvas>
     <div class="canvas_particle_preview">Select Particle Position</div>
   </div>
 
-  <img src="/colors.png" class="decoration colors">
-  <img src="/rule.png" class="decoration rule"><img src="/colors.png" class="decoration colors">
-  <img src="/pen.png" class="decoration pen"><img src="/colors.png" class="decoration colors">
+  <img src="./colors.png" class="decoration colors" />
+  <img src="./rule.png" class="decoration rule" /><img src="./colors.png" class="decoration colors" />
+  <img src="./pen.png" class="decoration pen" /><img src="/colors.png" class="decoration colors" />
 
   <div class="create_particle">
     <div class="button">
@@ -36,7 +36,7 @@
         <label for="fillColor">Particle color</label>
         <input type="color" id="fillColor" value="#fa8072">
       </div>
-      
+
       <div class="particle_preview_container">
         <div class="particle_preview"></div>
       </div>
@@ -45,8 +45,10 @@
   </div>
 
   <div class="physics_control">
-    <div class="checkbox"> <label for="gravity">Has gravity? (x)</label><input type="checkbox" class="gravity" value="on" checked></div>
-    <div class="checkbox"> <label for="friction">Has friction? (z)</label><input type="checkbox" class="friction" value="on" checked>
+    <div class="checkbox"> <label for="gravity">Has gravity? (x)</label><input type="checkbox" class="gravity"
+        value="on" checked></div>
+    <div class="checkbox"> <label for="friction">Has friction? (z)</label><input type="checkbox" class="friction"
+        value="on" checked>
     </div>
   </div>
 
