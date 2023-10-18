@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="canvas_container">
+    <img src="/bg.png" class="bg_image" />
+    <canvas id="canvas1"></canvas>
+    <div class="canvas_particle_preview">Select Particle Position</div>
+  </div>
+
+  <img src="/colors.png" class="decoration colors">
+  <img src="/rule.png" class="decoration rule"><img src="/colors.png" class="decoration colors">
+  <img src="/pen.png" class="decoration pen"><img src="/colors.png" class="decoration colors">
+
+  <div class="create_particle">
+    <div class="button">
+      <ion-icon name="chevron-up-outline" class="up"></ion-icon>
+    </div>
+    <div class="container">
+      <div class="item_container radius_container">
+        <label for="radius">Particle radius</label>
+        <input type="range" id="radius" min="5" max="45" step="1" value="10">
+      </div>
+      <div class="item_container friction_container">
+        <label for="friction">Particle friction</label>
+        <input type="range" id="friction" min="0" max="1" step="0.05" value="0.1">
+      </div>
+      <div class="item_container color_container">
+        <label for="fillColor">Particle color</label>
+        <input type="color" id="fillColor" value="#fa8072">
+      </div>
+      
+      <div class="particle_preview_container">
+        <div class="particle_preview"></div>
+      </div>
+      <button class="create_particle_button">Create particle</button>
+    </div>
+  </div>
+
+  <div class="physics_control">
+    <div class="checkbox"> <label for="gravity">Has gravity? (x)</label><input type="checkbox" class="gravity" value="on" checked></div>
+    <div class="checkbox"> <label for="friction">Has friction? (z)</label><input type="checkbox" class="friction" value="on" checked>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
